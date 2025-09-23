@@ -1,0 +1,44 @@
+{
+  "name": "cypress-api-framework-template",
+  "version": "1.0.0",
+  "description": "Template Cypress API + E2E automation framework with Jenkins + Allure integration",
+  "main": "cypress.config.js",
+  "keywords": [
+    "cypress",
+    "automation",
+    "api",
+    "allure",
+    "jenkins"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 8 -d cypress/e2e -w weights.json",
+    "generate-allure-report": "allure serve allure-results -h localhost",
+    "prettier": "prettier --write \"cypress/**/*.js\"",
+    "lint": "eslint \"cypress/**/*.js\""
+  },
+  "dependencies": {
+    "allure-commandline": "^2.30.0",
+    "cypress": "13.14.1",
+    "cypress-json-results": "^1.5.0",
+    "cypress-parallel": "^0.14.0",
+    "dayjs": "^1.11.11",
+    "glob": "^10.3.16",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@mmisty/cypress-allure-adapter": "^3.2.2",
+    "chai": "^5.1.0",
+    "chai-json-schema-ajv": "^5.2.4",
+    "cypress-plugin-init": "^0.0.9",
+    "eslint": "^8.45.0",
+    "eslint-plugin-cypress": "^2.13.3",
+    "prettier": "3.2.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

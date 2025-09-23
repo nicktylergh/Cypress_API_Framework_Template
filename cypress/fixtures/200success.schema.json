@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "200SuccessResponse",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string",
+            "format": "email"
+        }
+    },
+    "required": [
+        "id",
+        "email"
+    ]
+}

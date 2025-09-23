@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Cypress artifacts
+cypress/videos/
+cypress/screenshots/
+results.json
+runner-results/
+multi-reporter-config.json
+test.cy.js
+
+# Allure reports
+allure-results/
+allure-report/
+
+# IDE/Editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Other
+.nvmrc
