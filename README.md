@@ -31,7 +31,7 @@ This framework includes a sample Jenkins pipeline (`Jenkinsfile`) that:
 
 
 ## Project Structure
-CYPRESS_API_FRAMEWORK_TEMPLATE/
+```CYPRESS_API_FRAMEWORK_TEMPLATE/
 ├── .github/                     # GitHub workflows / configs
 │   └── CODEOWNERS
 │
@@ -62,7 +62,7 @@ CYPRESS_API_FRAMEWORK_TEMPLATE/
 ├── package.json                 # Node dependencies and scripts
 ├── pull_request_template.md     # PR template
 └── README.md                    # Project documentation
-
+```
 ## Purpose
 This repo is a **template** version of a production-grade framework.  
 All sensitive information has been removed. It demonstrates:
